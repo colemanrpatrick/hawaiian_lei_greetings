@@ -41,23 +41,19 @@
         </li>
       </ul>
     </header>
+    <div id="return-top">
+      <span class="material-symbols-outlined">arrow_circle_up</span>
+      <p>top</p>
+    </div>
     <script type="text/javascript">
       const returnTo = document.getElementById("return-top");
-      const catalogLearn = document.getElementById("catalog-learn");
-      function $scroll(){
+      returnTo.onclick = function () {
         window.scrollTo({
           top: 0,
           left: 0,
+          behavior: 'smooth'
         });
-      };
-      returnTo.onclick = function () {
-        $scroll();
-      };
-      if(catalogLearn){
-        catalogLearn.onclick = function(){
-         $scroll();
-        };
-      };
+      }
     </script>
 <!-- =================================================== -->
     <div id="hero">
