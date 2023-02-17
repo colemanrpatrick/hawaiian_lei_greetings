@@ -41,19 +41,23 @@
         </li>
       </ul>
     </header>
-    <div id="return-top">
-      <span class="material-symbols-outlined">arrow_circle_up</span>
-      <p>top</p>
-    </div>
     <script type="text/javascript">
       const returnTo = document.getElementById("return-top");
-      returnTo.onclick = function () {
+      const catalogLearn = document.getElementById("catalog-learn");
+      function $scroll(){
         window.scrollTo({
           top: 0,
           left: 0,
-          behavior: 'smooth'
         });
-      }
+      };
+      returnTo.onclick = function () {
+        $scroll();
+      };
+      if(catalogLearn){
+        catalogLearn.onclick = function(){
+         $scroll();
+        };
+      };
     </script>
 <!-- =================================================== -->
     <div id="hero">
@@ -69,16 +73,16 @@
             <p>explore by island</p><span class="material-symbols-outlined">expand_more</span> <span class="material-symbols-outlined">expand_less</span></a>
             <ul class="dropdown-tray">
               <li>
-                <a href="oahu.html">oahu</a>
+                <a href="/oahuleigreetings.html">oahu</a>
               </li>
               <li>
-                <a href="mauil.html">maui</a>
+                <a href="maui.html">maui</a>
               </li>
               <li>
                 <a href="bigisland.html">big island</a>
               </li>
               <li>
-                <a href="kauail.html">kauai</a>
+                <a href="kauai.html">kauai</a>
               </li>
             </ul>
           </div>

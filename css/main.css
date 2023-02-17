@@ -17,6 +17,9 @@
 .material-symbols-outlined {
 	vertical-align: middle;
 }
+b{
+	font-weight: bold !important;
+}
 a {
 	text-decoration: none !important;
 }
@@ -36,7 +39,7 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	font-size: 32px;
-	color: white;
+	color: #333;
 }
 @media(max-width:2280px) {
 	body {
@@ -69,10 +72,10 @@ body {
 	}
 }
 h1, h2, h3, h4, h5 {
-	font-family: 'Montserrat',"oswald";
+	font-family: 'Montserrat',"Roboto";
 }
 p, a, b {
-	font-family: 'oswald', system-ui, sans-serif;
+	font-family: 'Roboto', system-ui, sans-serif;
 	font-weight: 300;
 }
 p {
@@ -97,8 +100,7 @@ p {
 /*======== mobile menu btn =========*/
 #phone-mobile p {
   display: inline-block;
-  text-transform: ;
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #a92f64;
   font-weight: bolder;
 }
@@ -215,6 +217,7 @@ p {
 	border-bottom-left-radius: 1em;
 	z-index: 999;
 	cursor: pointer;
+	color: white;
 }
 #return-top span, #return-top p {
 	display: table-cell;
@@ -501,6 +504,7 @@ p {
 	font-weight: bolder;
 	text-shadow: 0em 0em 0.5em white;
 }
+
 #catalog section{
 	background: #ffeded;
 	padding: 1em;
@@ -509,6 +513,9 @@ p {
  width: 24.6%;
  display: inline-block;
  vertical-align: top;
+}
+#catalog-main .lei-product {
+	margin-bottom: 2em;
 }
 .lei-product .img-container{
   width: 100%;
@@ -533,6 +540,13 @@ p {
 	line-height: 1em;
 	margin-top: 1em;
 }
+.lei-product p {
+	color: #333;
+	line-height: 2em;
+	text-align: center;
+	padding: 0.5em 1em;
+	font-size: 0.85em;
+}
 .lei-product ul{
 	width: 100%;
 	display: table;
@@ -552,19 +566,19 @@ p {
   opacity: 0.4;
   font-size: 0.9em;
 }
-#lei-button {
+.lei-button {
   margin: 1em auto;
   display: inline-block;
   padding: 1em;
   text-transform: capitalize;
-  font-size: 1.5em;
+  font-size: 1.33em;
   background: #ad012a;
   color: white;
   border-radius: 1em;
   border: 0.15em solid white;
   transition: 0.3s;
 }
-#lei-button:hover{
+.lei-button:hover{
   background: #f5a2bf;
 }
 /*===================================================*/
@@ -740,4 +754,93 @@ footer h4 {
 	#hero-content{
 		padding: 3em;
 	}
+}
+#hero-alt{
+	width: 100%;
+	margin-top: 5.5em;
+	background-size: cover;
+	background-position: center;
+}
+#hero-alt section{
+	padding: 10em;
+	text-align: center;
+}
+#hero-alt section h1{
+	color: white;
+	text-transform: capitalize;
+	font-size: 3em;
+	line-height: 1em;
+}
+#hero-alt h2 {
+	color: white;
+	text-transform: capitalize;
+}
+#catalog-main {
+	padding: 0em;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+#catalog-main h3 {
+	text-align: right;
+	display: inline-block;
+	color: #bd0063;
+	text-transform: capitalize;
+	vertical-align: middle;
+	width: 60%;
+	font-size: 2em;
+}
+#catalog-main h3 span {
+	font-size: 0.45em;
+	line-height: 1em;
+	display: block;
+	color: #4d4d4d;
+  }
+
+#catalog-about {
+	padding: 3em;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 1200px;
+	width: 90%;
+  }
+  #catalog-about p:first-child,#catalog-about p:first-child span {
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #085337;
+  }
+#catalog-about p{
+	line-height: 2em;
+	margin-bottom: 1em;
+}
+#catalog-about a {
+	border: #ad012a;
+	padding: 0.5em;
+	border-radius: 2em;
+	line-height: 1em;
+	display: inline-block;
+	font-weight: bold;
+	background: #ad012a;
+	color: white;
+}
+@media(max-width: 950px){
+	#catalog-main{
+		padding: 1em;
+		text-align: center;
+	}
+	#catalog-main .lei-product{
+		padding: 1em;
+	}
+	#catalog-main h3 {
+		text-align: center;
+	   width: 100%;
+}
+}
+@media(max-width: 800px){
+	#hero-alt{
+		background-position: left;
+	}
+	#hero-alt section {
+	padding: 5em 0em;
+		background-color: rgba(0,0,0,0.4);
+  }
 }
