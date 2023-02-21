@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Luau Kai/sealifeparkluau/alohakai-official"
+		},
+		{
+			"path": "../../../hawaii_luaus/hawaii-luaus"
+		},
+		{
+			"path": "../../../hawaii_luaus"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

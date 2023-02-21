@@ -11,7 +11,7 @@
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@200&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@200&display=swap" rel="stylesheet">  
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     rel="stylesheet">
   </script>
@@ -51,86 +51,79 @@
         window.scrollTo({
           top: 0,
           left: 0,
-          behavior: 'smooth'
         });
-      }
+      };
     </script>
 <!-- =================================================== -->
-    <div id="hero">
+    <div id="hero-alt" style="background-image:url('images/orchid-sand.jpg')">
       <section>
-        <a href="reservations.html" id="callin-desktop"><p>Save Up To <span>30% off</span></p></a>
-      </section>
-      <section>
-        <div id="hero-content">
-          <h1>start your visit with an airport lei greeting</h1>
-          <h2>choose your destination to get started</h2>
-          <div class="dropdown">
-            <a class="dropdown-top" href="javascript:void(0)" onclick="toggleThis(this,'active');nextSiblingToggle(this,'active');">
-            <p>explore by island</p><span class="material-symbols-outlined">expand_more</span> <span class="material-symbols-outlined">expand_less</span></a>
-            <ul class="dropdown-tray">
-              <li>
-                <a href="/oahuleigreetings.html">oahu</a>
-              </li>
-              <li>
-                <a href="maui.html">maui</a>
-              </li>
-              <li>
-                <a href="bigisland.html">big island</a>
-              </li>
-              <li>
-                <a href="kauai.html">kauai</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <h1>airport lei greetings<br/> on <span>oahu</span></h1>
+        <h2>honolulu international airport</h2>
       </section>
     </div>
-<!-- =================================================== -->
-    <div id="additional-content">
-      <section>
-        <article>
-          <header>Experience a traditional Hawaiian welcome</header>
-          <p>Choose from our extensive selection of fresh flower leis, nut leis, candy leis, and more. Our greeters will present you with a traditional greeting and assistance at the airport as you begin your adventure in hawaii.<a href="order-now"> Order now</a> or call toll free <a href="tel:+18664829775">1-866-482-9775</a> to set up your airport lei greeting!</p>
-        </article>
-      </section>
-      <section>
-        <div id="yt-video-container-a">
-          <span class="material-symbols-outlined">play_circle</span>
-        </div>
-        <!--- lazy youtube -->
-        <script type="text/javascript">
-        var video = document.getElementById("yt-video-container-a");
-
-        video.addEventListener("click", function(){
-          var iframe = document.createElement( "iframe" );
-          iframe.setAttribute("frameborder","0");
-          iframe.setAttribute("allowfullscreen","");
-          iframe.setAttribute("src","https://www.youtube.com/embed/kMRB5OEoyfs?autoplay=1&rel=0" );  //youtube video source//
-          this.innerHTML = "";
-          this.appendChild( iframe );
+    <div id="catalog-main">
+      <a href="#" class="lei-button">reserve now!</a>
+      <button type="button" class="lei-button" id="catalog-learn">Learn More</button>
+      <script>
+        $(document).ready(function (){
+            $("#catalog-learn").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#catalog-about").offset().top - $("#masthead").height()
+                }, 0000);
+            });
         });
-        </script>
-      </section>
-    </div>
-  <!-- =================================================== -->
-    <div id="catalog">
-      <h3>popular airport greeting leis</h3>
+      </script>
+      <h3>lei greeting catalog <span>* The type of flower used on any lei is subject to season and availability.</span></h3>
       <section>
         <div class="lei-product">
           <a href="">
             <div class="img-container">
-              <img src="images/Deluxe-lei.jpg" alt="">
+              <img src="images/Standard-lei.jpg" alt="">
             </div>
-            <header>delux lei</header>
+            <header>standard lei</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, Officia natus non ipsam nulla eum, sequi eveniet adipisci.</p>
             <ul><li><span style="text-decoration:line-through">$39.79</span></li><li>$33.00</li></ul>
           </a>
         </div>
         <div class="lei-product">
           <a href="">
             <div class="img-container">
-              <img src="images/Candy-Lei.jpg" alt=""><!-- check -->
+              <img src="images/Deluxe-lei.jpg " alt=""><!-- check -->
+            </div>
+            <header>deluxe lei</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, Officia natus non ipsam nulla eum, sequi eveniet adipisci.</p>
+            <ul><li><span style="text-decoration:line-through">$39.79</span></li><li>$33.00</li></ul>
+          </a>
+        </div>
+        <div class="lei-product">
+          <a href="">
+            <div class="img-container">
+              <img src="images/Candy-lei.jpg " alt=""><!-- check -->
             </div>
             <header>candy lei</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, Officia natus non ipsam nulla eum, sequi eveniet adipisci.</p>
+            <ul><li><span style="text-decoration:line-through">$39.79</span></li><li>$33.00</li></ul>
+          </a>
+        </div>
+        <div class="lei-product">
+          <a href="">
+            <div class="img-container">
+              <img src="images/ti-lei.jpg " alt=""><!-- check -->
+            </div>
+            <header>ti leaf lei</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, Officia natus non ipsam nulla eum, sequi eveniet adipisci.</p>
+            <ul><li><span style="text-decoration:line-through">$39.79</span></li><li>$33.00</li></ul>
+          </a>
+        </div>
+      </section>
+      <section>
+        <div class="lei-product">
+          <a href="">
+            <div class="img-container">
+              <img src="images/tuberose-lei-2.jpg" alt=""><!-- check -->
+            </div>
+            <header>tube-rose lei</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, Officia natus non ipsam nulla eum, sequi eveniet adipisci.</p>
             <ul><li><span style="text-decoration:line-through">$39.79</span></li><li>$33.00</li></ul>
           </a>
         </div>
@@ -139,7 +132,8 @@
             <div class="img-container">
               <img src="images/Kukui-Nut.jpg" alt="">
             </div>
-            <header>kukui nut lei lei</header>
+            <header>kukui-nut lei</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, Officia natus non ipsam nulla eum, sequi eveniet adipisci.</p>
             <ul><li><span style="text-decoration:line-through">$39.79</span></li><li>$33.00</li></ul>
           </a>
         </div>
@@ -149,12 +143,32 @@
               <img src="images/Cigar-Lei.jpg" alt="">
             </div>
             <header>cigar lei</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, Officia natus non ipsam nulla eum, sequi eveniet adipisci.</p>
+            <ul><li><span style="text-decoration:line-through">$39.79</span></li><li>$33.00</li></ul>
+          </a>
+        </div>
+        <div class="lei-product">
+          <a href="">
+            <div class="img-container">
+              <img src="images/kukui-bracelet.jpg" alt=""><!-- check -->
+            </div>
+            <header>kukui-nut bracelet</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, Officia natus non ipsam nulla eum, sequi eveniet adipisci.</p>
             <ul><li><span style="text-decoration:line-through">$39.79</span></li><li>$33.00</li></ul>
           </a>
         </div>
       </section>
-      <a href="#" id="lei-button">browse full selection</a>
     </div>
+<!-- =================================================== -->
+  <div id="catalog-about">
+    <article>
+      <p><span class="material-symbols-outlined">airport_shuttle</span> Dont Forget, You Can Add arrival transportation to Waikiki area hotels at the same time as your lei greeting!</p>
+      <p><b>Please note:</b> If ordering within 2 days of arrival, there is a $15.00 surcharge per party (not per person). Only "Standard" Leis are available when ordering within 2 days of arrival. If this is a surprise greeting, please tell the recipient to look for a sign with their name on it.</p>
+      <p><b>Leis can be shortened for children upon request. Please call or make a notation next to the recipient’s name for the request.</b></p>
+      <p> <a href="/about.html"> <span class="material-symbols-outlined">info</span> More About Airport Lei greetings</a></p>
+    </article>
+  </div>
+<!-- =================================================== -->
 <footer>
   <ul>
     <li>
@@ -171,7 +185,7 @@
         <br/>
         <a href="#">privacy</a>
         <br/>
-        <a href="#">terms</a>
+        <a href="#">faq</a>
         <br/>
         <a href="#">contact</a>
       </li>
