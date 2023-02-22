@@ -997,6 +997,7 @@ footer h4 {
 }
 #islands-container {
   background: white;
+  text-align: center;
 }
 li {
 }
@@ -1103,7 +1104,6 @@ li {
 }
 #lei-button {
 	color: white;
-	margin: 1em;
 	display: inline-block;
 	padding: 1em;
 	text-transform: capitalize;
@@ -1111,4 +1111,5 @@ li {
 	border-radius: 1em;
 	background: #ad012a;
 	font-weight: bold;
+	margin: 0 auto;
 }
