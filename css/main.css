@@ -989,3 +989,126 @@ footer h4 {
 	  width: 100%;
 	}
   }
+
+#islands {
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+#islands-container {
+  background: white;
+}
+li {
+}
+#islands li {
+  overflow: hidden;
+  width: 25%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 12em;
+  padding: 3em 1em;
+	transform: scale(1);
+	transition: 0.3s;
+	transform-origin: center;
+}
+#islands li:hover{
+	transform: scale(1.1);
+}
+#islands .island-icon{
+  display: block;
+  position: relative;
+  background: #019dad;
+  overflow: hidden;
+  border-radius: 2em;
+	width: 100%;
+	height: 10em;
+}
+#islands .island-icon img {
+  width: 100%;
+	position: absolute;
+	
+  left: 0;
+}
+#islands li:nth-child(1) img{
+	top: 1em;
+}
+#islands li:nth-child(3) img{
+	top: -8.5em;
+}
+#islands li:nth-child(2) img{
+	top: -16.5em;
+}
+#islands li:nth-child(4) img{
+	top: -25.5em;
+}
+#islands-container h3 {
+  font-size: 2em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #a92f64;
+}
+@media(max-width:1056px){
+#islands li {
+	  padding: 3em 1em;
+  }	
+}
+@media(max-width:910px){
+#islands li {
+	width: 49%;
+	display: inline-block;
+	height: 18em;
+}
+#islands li .island-icon{
+  height: 11em
+}
+#islands li:nth-child(1) img{
+	top: -1.5em;
+}
+#islands li:nth-child(3) img{
+	top: -14.5em;
+}
+#islands li:nth-child(2) img{
+	top: -27.25em;
+}
+#islands li:nth-child(4) img{
+	top: -40em;
+}
+}
+@media(max-width:570px){
+	#islands li {
+		width: 100%;
+		height: 18em;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#islands li .island-icon{
+    width: 16em;
+		margin: 0 auto;
+		text-align: center;
+		height: 14em;
+		font-size: 0.75em;
+	}
+	#islands li:nth-child(1) img{
+	top: 0.5em;
+}
+#islands li:nth-child(3) img{
+	top: -13em;
+}
+#islands li:nth-child(2) img{
+	top: -26em;
+}
+#islands li:nth-child(4) img{
+	top: -39.5em;
+}
+}
+#lei-button {
+	color: white;
+	margin: 1em;
+	display: inline-block;
+	padding: 1em;
+	text-transform: capitalize;
+	font-size: 1.25em;
+	border-radius: 1em;
+	background: #ad012a;
+	font-weight: bold;
+}
