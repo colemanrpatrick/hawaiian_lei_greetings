@@ -2,10 +2,10 @@
 <html dir="ltr" lang="en">
 <head>
     <meta charset="utf-8">
-            <meta name="description" content="Save on your Oahu Lei Greeting at the Hawaii Honolulu airport - Oahuleigreetings.com offers Fresh Flower Leis at a discount.">
-            <meta content="user-scalable = yes, width=320, initial-scale=1" name="viewport">
+                <meta content="user-scalable = yes, width=320, initial-scale=1" name="viewport">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="css/main.css" rel="stylesheet">
+   
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -16,6 +16,8 @@
           rel="stylesheet">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="css/cart.css">
 
 </head>
 <body>
@@ -60,66 +62,82 @@
             };
         </script>
         
-<section class="cart">
+<a id="viewitems"></a>
+
+
+
+<section Class="post">
+    <form action="/Cart/Edit" class="price-form" method="post">
+        <div Class="container">
+
+
+            <input name="__RequestVerificationToken" type="hidden" value="EHJeygB5qa_E-OuziFy1A50J6QprXmn-4GBql_jYpzC5w_jJ8DezNygi9QoTvzkIfQpeeCdAnwYQhToS4j5xn7an8Rcr9Il7xEK4l13Ib_Y1" />
+            <div Class="row">
+                <div Class="col-md-12 col-lg-4 order-0 order-md-0">
+                    
+
+<section class="checkout-section">
     <div class="container">
-        <div class="row">
-            <!-- =================================================== -->
-<div id="hero-alt" style="background-image:url('images/orchid-sand.jpg')">
-    <section>
-        <h1>Oahu Lei Greeting at the Honolulu Airport</h1>
-        <button type="button" class="lei-button" id="btn1">Reserve Now!</button>
-        <!-- <a href="#" class="lei-button" id="catalog-learn" >Learn More</a> -->
-    </section>
-</div>
+        <!-- checkout form  -->
+        
+            <label>First Name</label>
+            <input type="text" name="CustomerFirstName" /><br />
 
-<div id="catalog-main">
-    <div id="lei-greetings-blurb">
-    <p>Experience a Hawaiian-style welcome when you arrive at the Honolulu International Airport on Oahu. A fresh flower lei greeting is a Hawaiian tradition and a great way to start your Hawaii vacation. Your friendly lei greeter will wait for you just prior to baggage claim at the Honolulu airport and welcome you with a fragrant flower lei. Reserve a Hawaiian lei greeting for yourself, or make a special gift for a dear friend or family member.</p><p>Choose between a variety of leis – a beautiful purple lei that is the most popular type, a lei suitable for men or children or a very fragrant tuberose lei. A Honolulu airport lei greeting is a warm and wonderful way to begin your vacation on Oahu and experience the aloha spirit. Reserve your lei greeting at the Honolulu Airport today and enjoy this wonderful Hawaiian tradition. Leis are made with the best flowers available – dendrobium orchids, carnations,
-        plumerias, tuberose or superior combinations of these flowers.  The 
-       type of flower used on any lei is subject to season and availability.</p>
-    <p><b>Please note:</b> If ordering within 2 days of arrival, there is a $15 surcharge per party (not per person). Only "Standard" leis are available when ordering within 2 days of arrival. If this is a surprise lei greeting, please tell the recipient to look for a sign with their name on it.</p><p><b>**Leis can be shortened for children upon request. Please call or make a notation next to the recipient’s name for the request.</b></p>    
+            <label>Last Name</label>
+            <input type="text" name="CustomerLastName" /><br />
+
+            <label>Street</label>
+            <input type="text" name="CustomerAddress" /><br />
+
+            <label>City</label>
+            <input type="text" name="CustomerCity" /><br />
+
+            <label>State</label>
+            <input type="text" name="CustomerRegion" /><br />
+
+            <label>Postal Code</label>
+            <input type="text" name="CustomerPostalCode" /><br />
+
+            <label>Country</label>
+            <input type="text" name="CustomerCountry" /><br />
+
+            <label>Email Address</label>
+            <input type="email" name="CustomerPrimaryEmail" value="colemanrpatrick@gmail.com" /><br />
+
+            <label>Mobile Phone</label>
+            <input type="text" name="CustomerMobilePhone" /><br />
+        
     </div>
+</section>
 
-    
-    <script>$(document).ready(function (){$("#catalog-learn").click(function (){$('html, body').animate({scrollTop: $("#catalog-about").offset().top - $("#masthead").height()}, 0000);});});</script><h3>lei greeting catalog <span>* The type of flower used on any lei is subject to season and availability.</span></h3><section><div class="lei-product"><a href=""><div class="img-container"><img src="images/Standard-lei.jpg" alt=""></div><header>standard lei</header><p>A single strand of flowers.</p></a></div><div class="lei-product"><a href=""><div class="img-container"><img src="images/Deluxe-lei.jpg " alt=""><!-- check --></div><header>deluxe lei</header><p>Our most lavish lei with three times the amount of flowers compared to the Standard Lei.</p></a></div><div class="lei-product"><a href=""><div class="img-container"><img src="images/Candy-lei.jpg " alt=""><!-- check --></div><header>candy lei</header><p>A fun alternative to flowers (type of candy varies in each lei) - the kids will love it!</p></a></div><div class="lei-product"><a href=""><div class="img-container"><img src="images/ti-lei.jpg " alt=""><!-- check --></div><header>ti leaf lei</header><p>Braided green leaf (Ti Leaf). This is the good luck lei!</p></a></div></section><section><div class="lei-product"><a href=""><div class="img-container"><img src="images/tuberose-lei-2.jpg" alt=""><!-- check --></div><header>tuberose lei</header><p>Stronger fragrance lei (sweet) compared to Standard Lei.</p></a></div><div class="lei-product"><a href=""><div class="img-container"><img src="images/Kukui-Nut.jpg" alt=""></div><header>kukui-nut lei</header><p>Glossy long lasting lei made from traditional Hawaiian nuts (not edible).</p></a></div><div class="lei-product"><a href=""><div class="img-container"><img src="images/Cigar-Lei.jpg" alt=""></div><header>cigar lei</header><p>Not a strong fragrance lei. A beautiful lei greeting which is popular with men.</p></a></div><div class="lei-product"><a href=""><div class="img-container"><img src="images/kukui-bracelet.jpg" alt=""><!-- check --></div><header>kukui-nut bracelet</header><p>Brand New! A perfect addition to any lei greeting order!</p></a></div></section></div><!-- =================================================== --><div id="catalog-about"><article><p><span class="material-symbols-outlined">airport_shuttle</span> Dont Forget, You Can Add arrival transportation to Waikiki area hotels at the same time as your lei greeting!</p><p><b>Please note:</b> If ordering within 2 days of arrival, there is a $15.00 surcharge per party (not per person). Only "Standard" Leis are available when ordering within 2 days of arrival. If this is a surprise greeting, please tell the recipient to look for a sign with their name on it.</p><p><b>Leis can be shortened for children upon request. Please call or make a notation next to the recipient’s name for the request.</b></p><p> <a href="/about.html"> <span class="material-symbols-outlined">info</span> More About Airport Lei greetings</a></p></article></div><!-- =================================================== -->
-            
-            <div class="col-md-12 col-lg-5 order-0 order-md-1">
-
-
+                </div>
+                <div Class="col-md-12 col-lg-8 order-1 order-md-1">
+                    
 
 
-<a id="viewcart"></a>
-<form id="addToCartForm" class="price-form" action="/products/details/1" method="post">
-    <div class="cart-post">
-        <!-- This where we put validation messages <a href="">Please enter a text value for Participant Names and Ages</a>-->
-
-            <h5>Your OrderTotal is $0.00 </h5>
-
-    </div>
-
-    <input type="hidden" name="cart" value="True" />
-    <div id="cart-update">
-    </div>
-
-    <div class="cart-buttons">
-        <button type="submit" class="submit-img" name="submit" value="Add to Cart"></button>
-        <button type="submit" class="view-img" name="submit" value="View Cart" formnovalidate></button>
-    </div>
 
     <div id="accordion">
 
             <div class="card">
-                <div class="card-header" id="headingAllPackages">
+                <div class="card-header" id="heading511_20230329">
                     <h5 class="mb-0">
-                        <button class="btn btn-block" data-toggle="collapse" data-target="#AllPackages" aria-expanded="true" aria-controls="AllPackages" type="button">
-                            All Packages
+                        <button class="btn btn-block" data-toggle="collapse" data-target="#d511_20230329" aria-expanded="true" aria-controls="d511_20230329" type="button">
+                             Oahu Lei Greetings at the Hawaii Honolulu Airport
                         </button>
                     </h5>
                 </div>
 
 
-                <div id="AllPackages" class="collapse show" aria-labelledby="AllPackages" data-parent="#accordion">
+                <div id="d511_20230329" class="collapse show" aria-labelledby="d511_20230329" data-parent="#accordion">
                     <div class="card-body">
+                            <a href="/Cart/DeleteProductOrder?ProductOrderKey=511_20230329" onclick="return confirm('Are you sure you want to remove this item?');"><i class="fas fa-trash"></i>Remove</a>
+                            &nbsp;
+                            <a href="/oahu" target="_blank"><i class="fas fa-eye"></i>View</a>
+        					<input type="hidden" name="productorder_1" value="0" />
+        					<input type="hidden" name="productorder_1_key" value="511_20230329" />
+        					<input type="hidden" name="productorder_product_1" value="1" />
+    					<br />
+
                         <table>
                             <tr>
                                 <th>qty</th>
@@ -129,160 +147,65 @@
 
                                 <tr>
                                     <td>
-                                        <input name="price_511_13" type="number" min="0" class="price"
-                                                                                />
+                                        <input name="price_511_20230329_13" class="p511_20230329" min="0" value = "1" type="number"/>
                                     </td>
                                     <td>Standard Lei</td>
                                     <td>
-                                                                                    <div class="price-n"><span>$38.74</span><br />$32.00</div>
 
+                                            <div class="price-n"><span>$38.74</span><br />$32.00</div>
 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input name="price_511_14" type="number" min="0" class="price"
-                                                                                />
+                                        <input name="price_511_20230329_14" class="p511_20230329" min="0" value = "2" type="number"/>
                                     </td>
                                     <td>Deluxe Lei</td>
                                     <td>
-                                                                                    <div class="price-n"><span>$39.79</span><br />$33.00</div>
 
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="price_511_15" type="number" min="0" class="price"
-                                                                                />
-                                    </td>
-                                    <td>Candy Lei</td>
-                                    <td>
-                                                                                    <div class="price-n"><span>$30.89</span><br />$25.00</div>
-
+                                            <div class="price-n"><span>$39.79</span><br />$33.00</div>
 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input name="price_511_16" type="number" min="0" class="price"
-                                                                                />
-                                    </td>
-                                    <td>Ti Leaf Lei</td>
-                                    <td>
-                                                                                    <div class="price-n"><span>$39.79</span><br />$33.00</div>
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="price_511_17" type="number" min="0" class="price"
-                                                                                />
-                                    </td>
-                                    <td>Tuberose Lei</td>
-                                    <td>
-                                                                                    <div class="price-n"><span>$50.26</span><br />$42.00</div>
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="price_511_18" type="number" min="0" class="price"
-                                                                                />
-                                    </td>
-                                    <td>Kukui Nut Lei</td>
-                                    <td>
-                                                                                    <div class="price-n"><span>$33.51</span><br />$28.00</div>
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="price_511_19" type="number" min="0" class="price"
-                                                                                />
-                                    </td>
-                                    <td>Cigar Lei</td>
-                                    <td>
-                                                                                    <div class="price-n"><span>$48.17</span><br />$40.00</div>
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="price_511_20" type="number" min="0" class="price"
-                                                                                />
-                                    </td>
-                                    <td>Kukui Nut Bracelet</td>
-                                    <td>
-                                                                                    <div class="price-n"><span>$23.04</span><br />$19.00</div>
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="price_511_12" type="number" min="0" class="price"
-                                                                                />
-                                    </td>
-                                    <td>Add Arrival Transportation to Waikiki - Per Person (4 yrs+)</td>
-                                    <td>
-                                                                                    <div class="price-n"><span>$19.88</span><br />$16.50</div>
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="price_511_9" type="number" min="0" class="price"
-                                                                                />
-                                    </td>
-                                    <td>Add Arrival Transportation to Waikiki - Per Person (0-3 yrs)</td>
-                                    <td>
-                                                        	                        <div class="price-n">0.00</div>
-
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="price_511_11" type="number" min="0" class="price"
-                                                                                />
+                                        <input name="price_511_20230329_11" class="p511_20230329" min="0" value = "1" type="number"/>
                                     </td>
                                     <td>2 Day Surcharge</td>
                                     <td>
-                                                        	                        <div class="price-n">15.00</div>
 
+                	                        <div class="price-n">15.00</div>
 
                                     </td>
                                 </tr>
-                        </table>
-                
-                    </div>
-                </div>
 
-            </div>
+                            <tr>
+                                <td colspan="3">
 
-    </div>
+                                </td>
+                            </tr>
 
+                            <tr>
+                                <td colspan="3">
 
-<label for="Arrival_Date">Arrival Date</label>
-    <input type="text"  class="datepicker" name="ActivityDate_511" value="" tabindex="0" title="Choose Activity Date "
+<label for="Activity_Date">Activity Date</label>
+    <input type="text"  class="datepicker" name="ActivityDate_511_20230329" value="03/29/2023" tabindex="1" title="Choose Activity Date "
     />
-<script>var vActivityDate_511 = ["02/25/2023","02/26/2023"]; $(function (){$("[name='ActivityDate_511']").datepicker({beforeShowDay: function(date){        var string = jQuery.datepicker.formatDate('mm/dd/yy', date);        return [ vActivityDate_511.indexOf(string) == -1 ]    }})});var $p = $('<p>', {id: 'ActivityDate_511_closedDates', 'class' : 'closed-date' });$p.text('"02/25/2023","02/26/2023"');$p.css({ 'opacity' : '0' , 'position' : 'absolute' , 'z-index' : '-1' , 'height' : '0' , 'overflow' : 'hidden' });$("[name='ActivityDate_511']").after($p);</script><label for="Estimated_Arrival_Time">Estimated Arrival Time</label>
-    <input type="text" name="EstimatedArrivalTime_511" value="" title="Enter Estimated Arrival Time"
-    />
-<label for="Airline_and_Flight_Number">Airline and Flight Number</label>
-    <input type="text" name="AirlineandFlightNumber_511" value="" title="Enter Airline and Flight Number"
-    />
+<script>var vActivityDate_511_20230329 = ["03/30/2023","03/31/2023"]; $(function (){$("[name='ActivityDate_511_20230329']").datepicker({beforeShowDay: function(date){        var string = jQuery.datepicker.formatDate('mm/dd/yy', date);        return [ vActivityDate_511_20230329.indexOf(string) == -1 ]    }})});var $p = $('<p>', {id: 'ActivityDate_511_20230329_closedDates', 'class' : 'closed-date' });$p.text('"03/30/2023","03/31/2023"');$p.css({ 'opacity' : '0' , 'position' : 'absolute' , 'z-index' : '-1' , 'height' : '0' , 'overflow' : 'hidden' });$("[name='ActivityDate_511_20230329']").after($p);</script>                                        <br />
 <label for="Recipient_s__Name_s_">Recipient(s) Name(s)</label>
-    <input type="text" name="RecipientsNames_511" value="" title="Enter Recipient(s) Name(s)"
+    <input type="text" name="RecipientsNames_511_20230329" value="test test" title="Enter Recipient(s) Name(s)"
     />
+                                        <br />
+<label for="Estimated_Arrival_Time">Estimated Arrival Time</label>
+    <input type="text" name="EstimatedArrivalTime_511_20230329" value="5:00 PM" title="Enter Estimated Arrival Time"
+    />
+                                        <br />
+<label for="Airline_and_Flight_Number">Airline and Flight Number</label>
+    <input type="text" name="AirlineandFlightNumber_511_20230329" value="not sure" title="Enter Airline and Flight Number"
+    />
+                                        <br />
 <label for="Select_Your_Oahu_Hotel">Select Your Oahu Hotel</label>
-<select name="SelectYourOahuHotel_511" tabindex="0" title="Choose Select Your Oahu Hotel"
+<select name="SelectYourOahuHotel_511_20230329" tabindex="5" title="Choose Select Your Oahu Hotel"
 
     
     >
@@ -361,7 +284,8 @@
             Aston Waikiki Beachside
         </option>
         <option value="90"
-                    >
+                     selected
+>
             Aston Waikiki Circle
         </option>
         <option value="91"
@@ -812,38 +736,139 @@
 
 
 
+                                        <br />
 
-<label for="Email_Address">Email Address</label>        <input type="email" name="Order.Customer.PrimaryEmail"/>
+                                </td>
+                            </tr>
+                        </table>
+                
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+    <script>
+        $(".Spinner").spinner();
+    </script>
 
 
-        <p id="total">Your OrderTotal is: <span>
-    $0.00 <br />
-            </span>
-         </p>
 
-    <input type="submit" class="btn btn-block" name="Submit" value="Book Now"/>
 
-</form>
+                    
 
+<div Class="cart-edit-bottom">
+        <p><span>Total </span>$113.00</p>
+        <p><span>Processing Fee Total </span>$8.00</p>
+        <p><span>Other Fee Total </span>$0.00</p>
+        <p><span>Discount Total </span>$0.00 </p>
+        <p><span>Your OrderTotal is </span>$121.00 <br /></p>
+</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <button type="submit" name="submit" id="input-2" Class="btn btn-block"  value="Update Cart">Update Cart</button>
+                </div>
+                <div class="col-sm-6">
+                    <button type="submit" name="submit" id="input-1" Class="btn btn-block"  onclick="return confirm('Are you sure you want to empty your cart?');" value="Empty Cart" formnovalidate>Empty Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+
+
+
+<form action="https://checkout.globalgatewaye4.firstdata.com/payment" method="post" id="purchase" class="price-form">
+    <input type="hidden" name="x_first_name">
+    <input type="hidden" name="x_last_name">
+    <input type="hidden" name="x_address">
+    <input type="hidden" name="x_city">
+    <input type="hidden" name="x_state">
+    <input type="hidden" name="x_zip">
+    <input type="hidden" name="x_country">
+    <input type="hidden" name="x_phone">
+    <input type="hidden" name="x_email" value="colemanrpatrick@gmail.com">
+    <input type="hidden" name="x_login" value="WSP-HAWAI-fkauygA7EA">
+    <input type="hidden" name="x_fp_sequence" value="8664829775">
+    <input type="hidden" name="x_fp_timestamp" value="1680213976">
+    <input type="hidden" name="x_amount" value="121.00">
+    <input type="hidden" name="x_fp_hash" value="e508060eed5b835fef3f9accb1c01371edb93a4e">
+    <input type="hidden" name="x_show_form" value="PAYMENT_FORM">
+    <input type="hidden" name="x_test_request" value="FALSE">
+    <input type="hidden" name="x_type" value="AUTH_CAPTURE">
+    <input type="hidden" name="x_gateway_id" value="B90652-01">
+    <input type="hidden" name="x_currency_code" value="USD">
+    <input type="hidden" name="x_cust_id" value="0">
+    <input type="hidden" name="x_line_item" value="1<|> Oahu Lei Greetings at the Hawaii Honolulu Airport<|> Oahu Lei Greetings at the Hawaii Honolulu Airport-Standard Lei<|>1<|>32.00<|>Y<|>0<|>96177<|>EA<|>0.00<|>Processing Fee<|>0<|>DISCOUNT<|>6.74<|>25.26"><input type="hidden" name="x_line_item" value="1<|> Oahu Lei Greetings at the Hawaii Honolulu Airport<|> Oahu Lei Greetings at the Hawaii Honolulu Airport-Deluxe Lei<|>2<|>33.00<|>Y<|>0<|>96177<|>EA<|>0.00<|>Processing Fee<|>0<|>DISCOUNT<|>6.79<|>59.21"><input type="hidden" name="x_line_item" value="1<|> Oahu Lei Greetings at the Hawaii Honolulu Airport<|> Oahu Lei Greetings at the Hawaii Honolulu Airport-2 Day Surcharge<|>1<|>15.00<|>Y<|>0<|>96177<|>EA<|>0.00<|>Processing Fee<|>0<|>DISCOUNT<|>0.00<|>15"><input type="hidden" name="x_line_item" value="9999<|>Processing Fee<|>Processing Fee<|>1<|>8.00366<|>Y<|>9999<|>96177<|>EA<|>0.00<|>Processing Fee<|>121.00366<|>DISCOUNT<|>0.00<|>8.00366">
+    <input type="hidden" name="x_po_num" value="13-177-w">
+    <input type="hidden" name="x_description" value="">
+    <input type="hidden" name="x_reference_3" value="">
+    <input type="hidden" name="x_tax" value="8.00366">
+    <input type="hidden" name="x_freight" value="0.00">
+    <input type="hidden" name="x_duty" value="0.00">
+    <input type="hidden" name="discount_amount" value="0">
+    <h3 class="title">Terms and Conditions</h3>
+    <div class="terms-scroll-box">
+        
+<h3 class="title">Scroll to Agree and Checkout</h3>
+
+    You will receive a full refund if we are unable to confirm your booking. There is no service charge for any cancellation of a confirmed booking outside of 48 hours of the check in time. 7 days notice required for parties of 8 or more.
+<br>
+<br>No refund for cancellations made less than 48 hours (72 hours for some activities &amp; groups of 6+) before the activity. For activities that have a longer cancellation period than 48 hours, the information will be on the activity page and your voucher.
+<br>
+<br>You are welcome to change the date or time of a booked activity free of charge if there is an opening on the tour and it&nbsp;is outside of the change or cancellation policy.
+<br>
+<br>There are no refunds on lei greetings for flights that you are not on, but we will make every effort to make sure you receive the leis on another flight as long as you call us with the new flight info.
+<br>
+<br>You agree to age, weight, and other restrictions as noted for the tour or activity. You understand that it is your responsibility to review the voucher and to contact Hawaii Discount if any information is incorrect or to make any changes.
+<br>
+<br>By clicking submit, you agree that Hawaii Discount may contact you via cell/phone or email for information on any changes in a tour or activity due to cancellation due to weather or reasons unforeseen by the vendor (ex: mechanical problems).
+<br>
+<br>A full refund will be given for any vendor cancellation and you have the right to reschedule or choose a full refund. If you would like to make any changes outside the tour or activity time please call 866-482-9775. Hawaii Discount will make every effort to change a tour or activity within the cancellation time, but if it is within the cancellation policy, it is up to the individual activity vendor.
+<br>
+<br>Gift Certificates or unused portions of your gift certificate are nonrefundable.
+<br>
+<br>Maui Ocean Center Aquarium tickets are nonrefundable due to its open ended nature.
+<br>
+<br>If renting a car, you agree that you have read about all fees and surcharges that will be collected at the agency and that you are responsible for those fees and any changes made to your rental at the counter.
+<br>
+<br>Due to airline ticket restrictions, any reservations that include airline tickets are non-refundable and non-changeable.
+
+<br />
+<br />By clicking Checkout, You agree to the Cancellation Policy Terms and Conditions.
 
         <p>
-            The type of flower used on any lei is subject to season and availability.<br><br>
-
-
-
+            <i class="fas fa-lock"></i>Your order is secure.
         </p>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" integrity="sha512-6Uv+497AWTmj/6V14BsQioPrm3kgwmK9HYIyWP+vClykX52b0zrDGP7lajZoIY1nNlX4oQuh7zsGjmF7D0VZYA==" crossorigin="anonymous"></script>
-<script>$(document).ready(function(){$(".price-form").removeAttr("novalidate");$(".price-form").validate({ rules : {price_511_11:{require_from_group: [1, ".price"],number:true,min:1},price_511_12:{require_from_group: [1, ".price"],number:true,min:1},price_511_13:{require_from_group: [1, ".price"],number:true,min:1},price_511_14:{require_from_group: [1, ".price"],number:true,min:1},price_511_15:{require_from_group: [1, ".price"],number:true,min:1},price_511_16:{require_from_group: [1, ".price"],number:true,min:1},price_511_17:{require_from_group: [1, ".price"],number:true,min:1},price_511_18:{require_from_group: [1, ".price"],number:true,min:1},price_511_19:{require_from_group: [1, ".price"],number:true,min:1},price_511_20:{require_from_group: [1, ".price"],number:true,min:1},ActivityDate_511:{required: true, date: true},SelectYourOahuHotel_511:{required: true}}, messages : {ActivityDate_511: {required:"Choose Activity Date",date:"Activity Date must be a valid date."},SelectYourOahuHotel_511: {required:"Select Select Your Oahu Hotel"}}});});</script>
-
+        <span id="checkout-display-warning" class="text-warning" style="display:none;">If the checkout button is disabled, click Update Cart and try again.</span>
+        <button type="submit" name="submit" class="btn btn-block"  value="Checkout" id="checkout">Checkout</button>
+    </div>
+</form>
 
             </div>
         </div>
-
-        
     </div>
 </section>
+
+
+
+
+<script type="text/javascript">
+    $("[name^='Order.Customer']").removeAttr("data-val-required");
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" integrity="sha512-6Uv+497AWTmj/6V14BsQioPrm3kgwmK9HYIyWP+vClykX52b0zrDGP7lajZoIY1nNlX4oQuh7zsGjmF7D0VZYA==" crossorigin="anonymous"></script>
+<script>$(document).ready(function(){$('.price-form').on('input change', function () {$('#checkout').attr('disabled', true);$('#checkout-display-warning').attr('style', 'display:inline-block;');});$(".price-form").removeAttr("novalidate");$(".price-form").validate({ rules : {price_511_20230329_11:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_12:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_13:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_14:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_15:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_16:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_17:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_18:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_19:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_20:{require_from_group: [1, ".p511_20230329"],number:true,min:1},ActivityDate_511_20230329:{required: true, date: true},SelectYourOahuHotel_511_20230329:{required: true},CustomerFirstName: {required: true},CustomerLastName: {required: true},CustomerAddress: {required: true},CustomerCity: {required: true},CustomerRegion: {required: true},CustomerPostalCode: {required: true},CustomerCountry: {required: true},CustomerPrimaryEmail: {required: true},CustomerMobilePhone: {required: true}}, messages : {ActivityDate_511_20230329: {required:"Choose Activity Date",date:"Activity Date must be a valid date."},SelectYourOahuHotel_511_20230329: {required:"Select Select Your Oahu Hotel"},"CustomerFirstName": {required: "Please enter your First Name"},"CustomerLastName": {required: "Please enter your Last Name"},"CustomerAddress": {required: "Please enter your Address"},"CustomerCity": {required: "Please enter your City"},"CustomerRegion": {required: "Please enter your State or Region"},"CustomerPostalCode": {required: "Please enter your Postal Code"},"CustomerCountry": {required: "Please enter your Country"},"CustomerPrimaryEmail": {required: "Please enter your Email"},"CustomerMobilePhone": {required: "Please enter your Mobile phone number"}}});});</script>
+
         <footer>
             <ul>
                 <li>
@@ -872,11 +897,11 @@
             </ul>
             <aside style="font-family: sans-serif">Copyright (c) 2023 Hawaiian Lei Greetings All Rights Reserved. <a href="/account/login">login</a></aside>
         </footer>
+        <script src="js/cartOrganizing.js"></script>
     </main>
     <script src="js/toggle.js" type="text/javascript">
     </script>
     <script src="js/main.js" type="text/javascript">
     </script>
-    <script src="js/addToCart.js"></script>
 </body>
 </html>

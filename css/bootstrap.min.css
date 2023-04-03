@@ -106,7 +106,7 @@ dl,
 ol,
 ul {
  margin-top:0;
- margin-bottom:1rem
+ /*! margin-bottom:1rem */
 }
 ol ol,
 ol ul,
@@ -480,8 +480,8 @@ pre code {
 }
 .container {
  width:100%;
- padding-right:15px;
- padding-left:15px;
+ /*! padding-right:15px; */
+ /*! padding-left:15px; */
  margin-right:auto;
  margin-left:auto
 }
@@ -632,8 +632,8 @@ pre code {
 .col-xl-auto {
  position:relative;
  width:100%;
- padding-right:15px;
- padding-left:15px
+ /*! padding-right:15px; */
+ /*! padding-left:15px */
 }
 .col {
  -ms-flex-preferred-size:0;
@@ -901,9 +901,10 @@ pre code {
   max-width:41.666667%
  }
  .col-sm-6 {
-  -ms-flex:0 0 50%;
-  flex:0 0 50%;
-  max-width:50%
+  max-width:13em;
+   display: inline-block;
+   padding: 0;
+   margin: 0;
  }
  .col-sm-7 {
   -ms-flex:0 0 58.333333%;
@@ -1133,7 +1134,7 @@ pre code {
  }
  .col-md-12 {
   -ms-flex:0 0 100%;
-  flex:0 0 100%;
+  /*! flex:0 0 100%; */
   max-width:100%
  }
  .order-md-first {
@@ -1312,11 +1313,11 @@ pre code {
   flex:0 0 58.333333%;
   max-width:58.333333%
  }
- .col-lg-8 {
+/*  .col-lg-8 {
   -ms-flex:0 0 66.666667%;
   flex:0 0 66.666667%;
   max-width:66.666667%
- }
+ } */
  .col-lg-9 {
   -ms-flex:0 0 75%;
   flex:0 0 75%;
@@ -4405,9 +4406,10 @@ input[type=submit].btn-block {
 }
 .card-body {
  -ms-flex:1 1 auto;
- flex:1 1 auto;
+ /*! flex:1 1 auto; */
  min-height:1px;
- padding:1.25rem
+ padding:2em;
+ background: #ffe5f4;
 }
 .card-title {
  margin-bottom:.75rem

@@ -1,0 +1,171 @@
+#heading511_20230329 {
+	display: none;
+}
+#cart-form {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    max-width: 60em;
+    width: 100%;
+};
+#cart-form .col-md-12.col-lg-4.order-0.order-md-0{
+    max-width: 100%;
+}
+#cart-form .col-md-12.col-lg-4.order-0.order-md-0 {
+	max-width: 100%;
+	padding: 0;
+}
+#checkout-section-header, #order-details-header, .title, #totals-header{
+  font-size: 3em;
+  font-weight: lighter !important;
+  color: white;
+  text-shadow: 0em 0em 0.75em #000000bd;
+  padding: 1em;
+  /*! line-height: 0em; */
+  text-align: center;
+}
+.terms-scroll-box {
+  max-width: 62em;
+  margin: 0 auto;
+  width: 95%;
+  background: #ffe5f4;
+  padding: 4em 6em;
+  line-height: 2em;
+  text-align: justify;
+}
+#cart-hero{
+    height: 20em;
+    background: white;
+    background-image: url("../images/aboutleigreetings.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#cart-hero h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    color: white;
+    bottom: 1em;
+    width: 100%;
+    text-align: center;
+    font-size: ;
+}
+.material-symbols-outlined {
+    font-size: 1em;
+}
+#checkout-section {
+    background: #ffe5f4;
+    padding: 3em;
+}
+#cart-edit-bottom{
+    background: #ffe5f4;
+    padding: 3em;
+}
+
+#cart-edit-bottom p {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 1.35em;
+  text-align: center;
+  vertical-align: top;
+}
+#cart-edit-bottom span {
+  display: block;
+  font-size: 0.75em;
+  max-width: 6em;
+  line-height: 1.33em;
+}
+
+#goToCheckout .material-symbols-outlined {
+  display: inline-block;
+  font-size: 2em;
+  vertical-align: middle;
+}
+#goToCheckout p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+#cart-bottom {
+  background: #ffe5f4;
+  padding: 1em;
+}
+#title-1 {
+  font-size: 2em;
+  text-shadow: none;
+  color: #333;
+}
+#checkout-section .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 29em;
+}
+td {
+	width: 33;
+	width: 33.3%;
+}
+#checkout {
+	margin: 0 auto;
+	display: block;
+}
+@media(max-width: 800px){
+  .numberSpinner{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 4em;
+    overflow: hidden;
+    transform: scaleY(-1);
+    background-color: #5e052b;
+  }
+  .numberMinus .material-symbols-outlined,
+  .numberPlus .material-symbols-outlined{
+  transform: rotate(90deg);
+  }
+  .numberSpinner section{
+    display: block;
+    transform: scaleY(-1);
+    background: white;
+  }
+  #checkout-section .container {
+  display: block;
+  align-items: center;
+  flex-direction: none;
+  flex-wrap: none;
+  height: auto;
+}
+  #checkout-section .container label,
+  #checkout-section .container input{
+    display:inline-block;
+    width: auto;
+    vertical-align: middle;
+    min-width: 10em;
+  }
+  .terms-scroll-box{
+    padding: 3em;
+  }
+}
+@media(max-width:533px){
+  #checkout-section .container label,
+  #checkout-section .container input{
+    display:inline-block;
+    width: auto;
+    vertical-align: middle;
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+    margin: 0.5em auto;
+  }  
+}
+@media(max-width:450px){
+  #cart-hero h2{
+    font-size: 2.25em;
+  }
+  #checkout-section-header, #order-details-header, .title, #totals-header{
+    font-size: 2em;
+  }
+}

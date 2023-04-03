@@ -1154,7 +1154,7 @@ td, th {
 	}
 
 .price-n span {
-	color: red;
+	color: #8800004a;
 	text-decoration-line: line-through;
 }
 
@@ -1166,12 +1166,11 @@ td, th {
 		font-size: 1em;
 		margin-bottom: 0;
 		font-weight: bold;
-		width: 49%;
 		text-align: left;
 		color: #5e052b;
 		margin-left: 1em;
 		line-height: 1em !important;
-		max-width: 25em;
+		width: 21em;
 	}
 
 	.price-form .numberSpinner label.error {
@@ -1202,11 +1201,11 @@ td, th {
 	}
 
 	.price-form button {
-		padding: 10px 20px;
+		padding: 10px 33px;
 		background-color: #a92f64;
 		color: #fff;
 		border: none;
-		border-radius: 20px;
+		border-radius: 2em;
 		text-transform: capitalize;
 		display: inline-block;
 		margin: 0.25em;
@@ -1236,7 +1235,7 @@ td, th {
 #addToCartWindow.col-md-12.col-lg-5.order-0.order-md-1.visible{
 	display: block;
 }
-.price-form {
+*#addToCartForm
   background: white;
   width: 90%;
   position: fixed;
@@ -1262,6 +1261,7 @@ td, th {
     font-size: 16px;
     min-height: 2em;
     padding-left: 0.5em;
+    background: white;
 }
 .numberSpinner input {
     width: 2em;
@@ -1272,7 +1272,7 @@ td, th {
     margin: 0;
     vertical-align: middle;
     display: inline-block;
-    background: aliceblue;
+    background: white;
     height: 1em;
     pointer-events: none;
 }
@@ -1323,8 +1323,20 @@ td, th {
   right: 0;
   top: 0.5em;
 }
+.btn.btn-block {
+	padding: 0.75em 0em;
+	background-color: #a92f64;
+	color: #fff;
+	border: none;
+	border-radius: 2em;
+	text-transform: capitalize;
+	margin: 0.25em;
+	font-size: 1.2em;
+	display: inline-block;
+	max-width: 10em !important;
+  }
 @media(max-width:938px){
-	.price-form{
+	#addToCartForm{
 		padding: 4em 0em;
 	}	
 }

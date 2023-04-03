@@ -65,12 +65,12 @@ let redesignSpinners = function(){
         spinnerSection.parentNode.insertBefore(spinnerPlus,spinnerSection.nextElementSibling);
         spinnerSection.parentNode.insertBefore(spinnerMinus,spinnerSection);
     });
-    Array.prototype.forEach.call(numberInput, function(item,index) {
-        console.log(item.value)
-        if(item.value.length < 1){
-            item.value = 0;
-        };
-    });
+    // Array.prototype.forEach.call(numberInput, function(item,index) {
+    //     console.log(item.value)
+    //     if(item.value.length < 1){
+    //         item.value = 0;
+    //     };
+    // });
 };
 redesignSpinners();
 let numberSpinnerPlus = document.getElementsByClassName("numberPlus");
@@ -98,12 +98,15 @@ createAddToCartWindow();
 let reserveNow = document.getElementById("btn1");
 let closeBtn = document.getElementById("close-button");
 let cartWindow = document.getElementById("addToCartWindow");
-reserveNow.addEventListener("click",function(){
+
+function toggleAddToCartWindow(){
     cartWindow.className = 'col-md-12 col-lg-5 order-0 order-md-1 visible';
-},false);
+};
+
 closeBtn.addEventListener("click",function(){
     cartWindow.className = 'col-md-12 col-lg-5 order-0 order-md-1';
 },false);
+
 /*======= misc organizing ========*/
 let textInput = document.querySelectorAll("input[type='text']");
 Array.prototype.forEach.call(textInput, function(item,index) {
