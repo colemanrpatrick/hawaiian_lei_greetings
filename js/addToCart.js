@@ -107,6 +107,10 @@ closeBtn.addEventListener("click",function(){
     cartWindow.className = 'col-md-12 col-lg-5 order-0 order-md-1';
 },false);
 
+document.getElementById("btn1").addEventListener("click",function(){
+    toggleAddToCartWindow();
+},false);
+
 /*======= misc organizing ========*/
 let textInput = document.querySelectorAll("input[type='text']");
 Array.prototype.forEach.call(textInput, function(item,index) {

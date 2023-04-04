@@ -1158,11 +1158,11 @@ td, th {
 	text-decoration-line: line-through;
 }
 
-.price-form {
+#addToCartForm {
 	display: block;
 }
 
-	.price-form label {
+	#addToCartForm label {
 		font-size: 1em;
 		margin-bottom: 0;
 		font-weight: bold;
@@ -1173,7 +1173,7 @@ td, th {
 		width: 21em;
 	}
 
-	.price-form .numberSpinner label.error {
+	#addToCartForm .numberSpinner label.error {
 /* 		font-size: 11px;
 		margin-bottom: 10px;
 		font-weight: bold;
@@ -1186,21 +1186,21 @@ td, th {
 		top: 3em;
 		z-index: 999; */
 	}
-	.price-form .numberSpinner label.error {
+	#addToCartForm .numberSpinner label.error {
     display: none !important;
 	}
 
-	.price-form input[type=text],
-	.price-form input[type=email],
-	.price-form input[type=date],
-	.price-form input[type=submit],
-	.price-form textarea,
-	.price-form select {
+	#addToCartForm input[type=text],
+	#addToCartForm input[type=email],
+	#addToCartForm input[type=date],
+	#addToCartForm input[type=submit],
+	#addToCartForm textarea,
+	#addToCartForm select {
 		width: 49%;
 		max-width: 20em;
 	}
 
-	.price-form button {
+	#addToCartForm button:not(.numberPlus,.numberMinus) {
 		padding: 10px 33px;
 		background-color: #a92f64;
 		color: #fff;
@@ -1210,12 +1210,11 @@ td, th {
 		display: inline-block;
 		margin: 0.25em;
 	}
-
-		.price-form button:hover {
+		#addToCartForm button:hover {
 			opacity: 0.8;
 		}
 
-	.price-form img {
+	#addToCartForm img {
 		margin-bottom: 20px;
 	}
 
@@ -1235,7 +1234,7 @@ td, th {
 #addToCartWindow.col-md-12.col-lg-5.order-0.order-md-1.visible{
 	display: block;
 }
-*#addToCartForm
+#addToCartForm{
   background: white;
   width: 90%;
   position: fixed;
@@ -1351,7 +1350,7 @@ td, th {
 		width: 3.55em;
 	}
 }
- .price-form input[type="text"], .price-form  input[type="email"], .price-form select {
+ #addToCartForm input[type="text"], #addToCartForm  input[type="email"], #addToCartForm select {
   border: 2px solid #a92f64;
   margin: 1em;
   padding: 0.5em;
@@ -1362,7 +1361,7 @@ td, th {
 	margin-top: 1em;
 }
 @media(max-width:500px){
-	.price-form input[type="text"], .price-form input[type="email"], .price-form input[type="date"], .price-form input[type="submit"], .price-form textarea, .price-form select {
+	#addToCartForm input[type="text"], #addToCartForm input[type="email"], #addToCartForm input[type="date"], #addToCartForm input[type="submit"], #addToCartForm textarea, #addToCartForm select {
 	width: 90%;
 	max-width: 20em;
 }
