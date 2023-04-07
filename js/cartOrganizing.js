@@ -1,5 +1,5 @@
 console.log("cart.js");
-document.getElementsByClassName("price-form")[0].setAttribute("id","cart-form");
+document.getElementsByClassName("maincart-form")[0].setAttribute("id","cart-form");
 
 var $_anchor = document.getElementsByTagName("A");
 for (var i = 0; i < $_anchor.length; i++) {

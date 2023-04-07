@@ -5,6 +5,7 @@
                 <meta content="user-scalable = yes, width=320, initial-scale=1" name="viewport">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="css/main.css" rel="stylesheet">
+   
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -16,6 +17,8 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
+    <link rel="stylesheet" href="css/cart.css">
+
 </head>
 <body>
     <main>
@@ -23,7 +26,7 @@
         <header id="masthead">
             <ul>
                 <li id="logo">
-                    <a href="/"><img alt="" src="/images/hawaii-lei-greetings.png"></a>
+                    <a href="/"><img alt="" src="images/hawaii-lei-greetings.png"></a>
                 </li>
                 <li>
                     <nav id="main-nav">
@@ -59,16 +62,16 @@
             };
         </script>
         
-<link rel="stylesheet" href="css/cart.css">
 <a id="viewitems"></a>
 
 
+
 <section Class="post">
-    <form action="/Cart/Edit" class="maincart-form" method="post">
+    <form action="/Cart/Edit" class="price-form" method="post">
         <div Class="container">
 
 
-            <input name="__RequestVerificationToken" type="hidden" value="jxPkJGGMw7OFP-JKeDgetVfVUURP3P0QVQlNpp0pH6jwvfN6xakdUYrrWTuXqVeGHpQPc5chNZzVODgaUORS5iTJkJ3GehaqFNRrKkT7WeI1" />
+            <input name="__RequestVerificationToken" type="hidden" value="EHJeygB5qa_E-OuziFy1A50J6QprXmn-4GBql_jYpzC5w_jJ8DezNygi9QoTvzkIfQpeeCdAnwYQhToS4j5xn7an8Rcr9Il7xEK4l13Ib_Y1" />
             <div Class="row">
                 <div Class="col-md-12 col-lg-4 order-0 order-md-0">
                     
@@ -116,22 +119,22 @@
     <div id="accordion">
 
             <div class="card">
-                <div class="card-header" id="heading511_20230430">
+                <div class="card-header" id="heading511_20230329">
                     <h5 class="mb-0">
-                        <button class="btn btn-block" data-toggle="collapse" data-target="#d511_20230430" aria-expanded="true" aria-controls="d511_20230430" type="button">
+                        <button class="btn btn-block" data-toggle="collapse" data-target="#d511_20230329" aria-expanded="true" aria-controls="d511_20230329" type="button">
                              Oahu Lei Greetings at the Hawaii Honolulu Airport
                         </button>
                     </h5>
                 </div>
 
 
-                <div id="d511_20230430" class="collapse show" aria-labelledby="d511_20230430" data-parent="#accordion">
+                <div id="d511_20230329" class="collapse show" aria-labelledby="d511_20230329" data-parent="#accordion">
                     <div class="card-body">
-                            <a href="/Cart/DeleteProductOrder?ProductOrderKey=511_20230430" onclick="return confirm('Are you sure you want to remove this item?');"><i class="fas fa-trash"></i>Remove</a>
+                            <a href="/Cart/DeleteProductOrder?ProductOrderKey=511_20230329" onclick="return confirm('Are you sure you want to remove this item?');"><i class="fas fa-trash"></i>Remove</a>
                             &nbsp;
                             <a href="/oahu" target="_blank"><i class="fas fa-eye"></i>View</a>
         					<input type="hidden" name="productorder_1" value="0" />
-        					<input type="hidden" name="productorder_1_key" value="511_20230430" />
+        					<input type="hidden" name="productorder_1_key" value="511_20230329" />
         					<input type="hidden" name="productorder_product_1" value="1" />
     					<br />
 
@@ -144,12 +147,34 @@
 
                                 <tr>
                                     <td>
-                                        <input name="price_511_20230430_13" class="p511_20230430" min="0" value = "1" type="number"/>
+                                        <input name="price_511_20230329_13" class="p511_20230329" min="0" value = "1" type="number"/>
                                     </td>
                                     <td>Standard Lei</td>
                                     <td>
 
                                             <div class="price-n"><span>$38.74</span><br />$32.00</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="price_511_20230329_14" class="p511_20230329" min="0" value = "2" type="number"/>
+                                    </td>
+                                    <td>Deluxe Lei</td>
+                                    <td>
+
+                                            <div class="price-n"><span>$39.79</span><br />$33.00</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="price_511_20230329_11" class="p511_20230329" min="0" value = "1" type="number"/>
+                                    </td>
+                                    <td>2 Day Surcharge</td>
+                                    <td>
+
+                	                        <div class="price-n">15.00</div>
 
                                     </td>
                                 </tr>
@@ -164,31 +189,30 @@
                                 <td colspan="3">
 
 <label for="Activity_Date">Activity Date</label>
-    <input type="text"  class="datepicker" name="ActivityDate_511_20230430" value="04/30/2023" tabindex="1" title="Choose Activity Date "
+    <input type="text"  class="datepicker" name="ActivityDate_511_20230329" value="03/29/2023" tabindex="1" title="Choose Activity Date "
     />
-<script>var vActivityDate_511_20230430 = ["04/05/2023","04/06/2023"]; $(function (){$("[name='ActivityDate_511_20230430']").datepicker({beforeShowDay: function(date){        var string = jQuery.datepicker.formatDate('mm/dd/yy', date);        return [ vActivityDate_511_20230430.indexOf(string) == -1 ]    }})});var $p = $('<p>', {id: 'ActivityDate_511_20230430_closedDates', 'class' : 'closed-date' });$p.text('"04/05/2023","04/06/2023"');$p.css({ 'opacity' : '0' , 'position' : 'absolute' , 'z-index' : '-1' , 'height' : '0' , 'overflow' : 'hidden' });$("[name='ActivityDate_511_20230430']").after($p);</script>                                        <br />
+<script>var vActivityDate_511_20230329 = ["03/30/2023","03/31/2023"]; $(function (){$("[name='ActivityDate_511_20230329']").datepicker({beforeShowDay: function(date){        var string = jQuery.datepicker.formatDate('mm/dd/yy', date);        return [ vActivityDate_511_20230329.indexOf(string) == -1 ]    }})});var $p = $('<p>', {id: 'ActivityDate_511_20230329_closedDates', 'class' : 'closed-date' });$p.text('"03/30/2023","03/31/2023"');$p.css({ 'opacity' : '0' , 'position' : 'absolute' , 'z-index' : '-1' , 'height' : '0' , 'overflow' : 'hidden' });$("[name='ActivityDate_511_20230329']").after($p);</script>                                        <br />
 <label for="Recipient_s__Name_s_">Recipient(s) Name(s)</label>
-    <input type="text" name="RecipientsNames_511_20230430" value="Test Do No Process" title="Enter Recipient(s) Name(s)"
+    <input type="text" name="RecipientsNames_511_20230329" value="test test" title="Enter Recipient(s) Name(s)"
     />
                                         <br />
 <label for="Estimated_Arrival_Time">Estimated Arrival Time</label>
-    <input type="text" name="EstimatedArrivalTime_511_20230430" value="Test time" title="Enter Estimated Arrival Time"
+    <input type="text" name="EstimatedArrivalTime_511_20230329" value="5:00 PM" title="Enter Estimated Arrival Time"
     />
                                         <br />
 <label for="Airline_and_Flight_Number">Airline and Flight Number</label>
-    <input type="text" name="AirlineandFlightNumber_511_20230430" value="Test Test" title="Enter Airline and Flight Number"
+    <input type="text" name="AirlineandFlightNumber_511_20230329" value="not sure" title="Enter Airline and Flight Number"
     />
                                         <br />
 <label for="Select_Your_Oahu_Hotel">Select Your Oahu Hotel</label>
-<select name="SelectYourOahuHotel_511_20230430" tabindex="5" title="Choose Select Your Oahu Hotel"
+<select name="SelectYourOahuHotel_511_20230329" tabindex="5" title="Choose Select Your Oahu Hotel"
 
     
     >
 
     <option value="">Select Your Oahu Hotel</option>
         <option value="153"
-                     selected
->
+                    >
             Other
         </option>
         <option value="73"
@@ -260,7 +284,8 @@
             Aston Waikiki Beachside
         </option>
         <option value="90"
-                    >
+                     selected
+>
             Aston Waikiki Circle
         </option>
         <option value="91"
@@ -734,11 +759,11 @@
                     
 
 <div Class="cart-edit-bottom">
-        <p><span>Total </span>$32.00</p>
-        <p><span>Processing Fee Total </span>$2.61</p>
+        <p><span>Total </span>$113.00</p>
+        <p><span>Processing Fee Total </span>$8.00</p>
         <p><span>Other Fee Total </span>$0.00</p>
         <p><span>Discount Total </span>$0.00 </p>
-        <p><span>Your OrderTotal is </span>$34.61 <br /></p>
+        <p><span>Your OrderTotal is </span>$121.00 <br /></p>
 </div>
                 </div>
             </div>
@@ -760,7 +785,7 @@
 
 
 
-<form action="https://checkout.globalgatewaye4.firstdata.com/payment" method="post" id="purchase">
+<form action="https://checkout.globalgatewaye4.firstdata.com/payment" method="post" id="purchase" class="price-form">
     <input type="hidden" name="x_first_name">
     <input type="hidden" name="x_last_name">
     <input type="hidden" name="x_address">
@@ -772,20 +797,20 @@
     <input type="hidden" name="x_email" value="colemanrpatrick@gmail.com">
     <input type="hidden" name="x_login" value="WSP-HAWAI-fkauygA7EA">
     <input type="hidden" name="x_fp_sequence" value="8664829775">
-    <input type="hidden" name="x_fp_timestamp" value="1680728250">
-    <input type="hidden" name="x_amount" value="34.61">
-    <input type="hidden" name="x_fp_hash" value="e208a88b8556faad238240b99d4ff8eab30c1816">
+    <input type="hidden" name="x_fp_timestamp" value="1680213976">
+    <input type="hidden" name="x_amount" value="121.00">
+    <input type="hidden" name="x_fp_hash" value="e508060eed5b835fef3f9accb1c01371edb93a4e">
     <input type="hidden" name="x_show_form" value="PAYMENT_FORM">
     <input type="hidden" name="x_test_request" value="FALSE">
     <input type="hidden" name="x_type" value="AUTH_CAPTURE">
     <input type="hidden" name="x_gateway_id" value="B90652-01">
     <input type="hidden" name="x_currency_code" value="USD">
     <input type="hidden" name="x_cust_id" value="0">
-    <input type="hidden" name="x_line_item" value="1<|> Oahu Lei Greetings at the Hawaii Honolulu Airport<|> Oahu Lei Greetings at the Hawaii Honolulu Airport-Standard Lei<|>1<|>32.00<|>Y<|>0<|>96177<|>EA<|>0.00<|>Processing Fee<|>0<|>DISCOUNT<|>6.74<|>25.26"><input type="hidden" name="x_line_item" value="9999<|>Processing Fee<|>Processing Fee<|>1<|>2.61344<|>Y<|>9999<|>96177<|>EA<|>0.00<|>Processing Fee<|>34.61344<|>DISCOUNT<|>0.00<|>2.61344">
-    <input type="hidden" name="x_po_num" value="13-179-w">
+    <input type="hidden" name="x_line_item" value="1<|> Oahu Lei Greetings at the Hawaii Honolulu Airport<|> Oahu Lei Greetings at the Hawaii Honolulu Airport-Standard Lei<|>1<|>32.00<|>Y<|>0<|>96177<|>EA<|>0.00<|>Processing Fee<|>0<|>DISCOUNT<|>6.74<|>25.26"><input type="hidden" name="x_line_item" value="1<|> Oahu Lei Greetings at the Hawaii Honolulu Airport<|> Oahu Lei Greetings at the Hawaii Honolulu Airport-Deluxe Lei<|>2<|>33.00<|>Y<|>0<|>96177<|>EA<|>0.00<|>Processing Fee<|>0<|>DISCOUNT<|>6.79<|>59.21"><input type="hidden" name="x_line_item" value="1<|> Oahu Lei Greetings at the Hawaii Honolulu Airport<|> Oahu Lei Greetings at the Hawaii Honolulu Airport-2 Day Surcharge<|>1<|>15.00<|>Y<|>0<|>96177<|>EA<|>0.00<|>Processing Fee<|>0<|>DISCOUNT<|>0.00<|>15"><input type="hidden" name="x_line_item" value="9999<|>Processing Fee<|>Processing Fee<|>1<|>8.00366<|>Y<|>9999<|>96177<|>EA<|>0.00<|>Processing Fee<|>121.00366<|>DISCOUNT<|>0.00<|>8.00366">
+    <input type="hidden" name="x_po_num" value="13-177-w">
     <input type="hidden" name="x_description" value="">
     <input type="hidden" name="x_reference_3" value="">
-    <input type="hidden" name="x_tax" value="2.61344">
+    <input type="hidden" name="x_tax" value="8.00366">
     <input type="hidden" name="x_freight" value="0.00">
     <input type="hidden" name="x_duty" value="0.00">
     <input type="hidden" name="discount_amount" value="0">
@@ -839,20 +864,20 @@
     $("[name^='Order.Customer']").removeAttr("data-val-required");
 
 </script>
-<script type="text/javascript" src="js/cartOrganizing.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" integrity="sha512-6Uv+497AWTmj/6V14BsQioPrm3kgwmK9HYIyWP+vClykX52b0zrDGP7lajZoIY1nNlX4oQuh7zsGjmF7D0VZYA==" crossorigin="anonymous"></script>
-<script>$(document).ready(function(){$('.price-form').on('input change', function () {$('#checkout').attr('disabled', true);$('#checkout-display-warning').attr('style', 'display:inline-block;');});$(".price-form").removeAttr("novalidate");$(".price-form").validate({ rules : {price_511_20230430_11:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_12:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_13:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_14:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_15:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_16:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_17:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_18:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_19:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_20:{require_from_group: [1, ".p511_20230430"],number:true,min:1},ActivityDate_511_20230430:{required: true, date: true},SelectYourOahuHotel_511_20230430:{required: true},CustomerFirstName: {required: true},CustomerLastName: {required: true},CustomerAddress: {required: true},CustomerCity: {required: true},CustomerRegion: {required: true},CustomerPostalCode: {required: true},CustomerCountry: {required: true},CustomerPrimaryEmail: {required: true},CustomerMobilePhone: {required: true}}, messages : {ActivityDate_511_20230430: {required:"Choose Activity Date",date:"Activity Date must be a valid date."},SelectYourOahuHotel_511_20230430: {required:"Select Select Your Oahu Hotel"},"CustomerFirstName": {required: "Please enter your First Name"},"CustomerLastName": {required: "Please enter your Last Name"},"CustomerAddress": {required: "Please enter your Address"},"CustomerCity": {required: "Please enter your City"},"CustomerRegion": {required: "Please enter your State or Region"},"CustomerPostalCode": {required: "Please enter your Postal Code"},"CustomerCountry": {required: "Please enter your Country"},"CustomerPrimaryEmail": {required: "Please enter your Email"},"CustomerMobilePhone": {required: "Please enter your Mobile phone number"}}});});</script>
+<script>$(document).ready(function(){$('.price-form').on('input change', function () {$('#checkout').attr('disabled', true);$('#checkout-display-warning').attr('style', 'display:inline-block;');});$(".price-form").removeAttr("novalidate");$(".price-form").validate({ rules : {price_511_20230329_11:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_12:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_13:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_14:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_15:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_16:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_17:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_18:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_19:{require_from_group: [1, ".p511_20230329"],number:true,min:1},price_511_20230329_20:{require_from_group: [1, ".p511_20230329"],number:true,min:1},ActivityDate_511_20230329:{required: true, date: true},SelectYourOahuHotel_511_20230329:{required: true},CustomerFirstName: {required: true},CustomerLastName: {required: true},CustomerAddress: {required: true},CustomerCity: {required: true},CustomerRegion: {required: true},CustomerPostalCode: {required: true},CustomerCountry: {required: true},CustomerPrimaryEmail: {required: true},CustomerMobilePhone: {required: true}}, messages : {ActivityDate_511_20230329: {required:"Choose Activity Date",date:"Activity Date must be a valid date."},SelectYourOahuHotel_511_20230329: {required:"Select Select Your Oahu Hotel"},"CustomerFirstName": {required: "Please enter your First Name"},"CustomerLastName": {required: "Please enter your Last Name"},"CustomerAddress": {required: "Please enter your Address"},"CustomerCity": {required: "Please enter your City"},"CustomerRegion": {required: "Please enter your State or Region"},"CustomerPostalCode": {required: "Please enter your Postal Code"},"CustomerCountry": {required: "Please enter your Country"},"CustomerPrimaryEmail": {required: "Please enter your Email"},"CustomerMobilePhone": {required: "Please enter your Mobile phone number"}}});});</script>
 
         <footer>
             <ul>
                 <li>
-                    <a href="#"><img alt="" src="/images/hawaii-lei-greetings.png"></a>
+                    <a href="#"><img alt="" src="images/hawaii-lei-greetings.png"></a>
                     <div class="social">
-                        <a href="#"> <img src="/images/facebook_twitter_youtube_instagram.png" alt="" id="social-fb" class="delayed-img">  </a>
-                        <a href="#"> <img src="/images/facebook_twitter_youtube_instagram.png" alt="" id="social-tw" class="delayed-img">  </a>
-                        <a href="#"> <img src="/images/facebook_twitter_youtube_instagram.png" alt="" id="social-yt" class="delayed-img">  </a>
-                        <a href="#"> <img src="/images/facebook_twitter_youtube_instagram.png" alt="" id="social-ig" class="delayed-img">  </a>
+                        <a href="#"> <img src="images/facebook_twitter_youtube_instagram.png" alt="" id="social-fb" class="delayed-img">  </a>
+                        <a href="#"> <img src="images/facebook_twitter_youtube_instagram.png" alt="" id="social-tw" class="delayed-img">  </a>
+                        <a href="#"> <img src="images/facebook_twitter_youtube_instagram.png" alt="" id="social-yt" class="delayed-img">  </a>
+                        <a href="#"> <img src="images/facebook_twitter_youtube_instagram.png" alt="" id="social-ig" class="delayed-img">  </a>
                     </div>
                     <b><a href="tel:+18664829775"><span class="material-symbols-outlined">call</span> 1-866-482-9775</a></b>
                 </li>
@@ -872,6 +897,7 @@
             </ul>
             <aside style="font-family: sans-serif">Copyright (c) 2023 Hawaiian Lei Greetings All Rights Reserved. <a href="/account/login">login</a></aside>
         </footer>
+        <script src="js/cartOrganizing.js"></script>
     </main>
     <script src="js/toggle.js" type="text/javascript">
     </script>

@@ -169,3 +169,76 @@ td {
     font-size: 2em;
   }
 }
+/* cart page */ 
+h5.mb-0 button {
+  display: none !important;
+}
+.price-n span {
+	color: #8800004a;
+	text-decoration-line: line-through;
+}
+
+.maincart-form {
+	display: block;
+}
+
+.maincart-form label {
+	font-size: 1em;
+	margin-bottom: 0;
+	font-weight: bold;
+	text-align: left;
+	color: #5e052b;
+	margin-left: 1em;
+	line-height: 1em !important;
+	width: 21em;
+}
+
+.maincart-form .numberSpinner label.error {
+	display: none !important;
+}
+
+.maincart-form input[type=text],
+.maincart-form input[type=email],
+.maincart-form input[type=date],
+.maincart-form input[type=submit],
+.maincart-form textarea,
+.maincart-form select {
+	width: 49%;
+	max-width: 20em;
+  border: 2px solid #a92f64;
+	margin: 1em;
+	padding: 0.5em;
+}
+
+.maincart-form button:not(.numberPlus, .numberMinus) {
+	padding: 10px 33px;
+	background-color: #a92f64;
+	color: #fff;
+	border: none;
+	border-radius: 2em;
+	text-transform: capitalize;
+	display: inline-block;
+	margin: 0.25em;
+}
+.maincart-form .numberSpinner{
+  text-align: center;
+}
+
+@media(max-width:938px) {
+	.maincart-form {
+		padding: 4em 0em;
+	}
+}
+
+@media(max-width:500px) {
+
+	.maincart-form input[type="text"],
+	.maincart-form input[type="email"],
+	.maincart-form input[type="date"],
+	.maincart-form input[type="submit"],
+	.maincart-form textarea,
+	.maincart-form select {
+		width: 90%;
+		max-width: 20em;
+	}
+}
