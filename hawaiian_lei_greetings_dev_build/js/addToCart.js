@@ -29,7 +29,12 @@ moveButtons();
 function numIncrement(numberInput, increase) {
     var myInputObject = document.getElementById(numberInput);
     if (increase) {
-        myInputObject.value++;
+        if (myInputObject.Value == " "){
+            myInputObject.value = 1;
+        }else{
+           myInputObject.value++;
+        }
+        
         localStorage.setItem("" + myInputObject.getAttribute("name") + "", myInputObject.value);
     } else {
         myInputObject.value--;
@@ -38,15 +43,18 @@ function numIncrement(numberInput, increase) {
     if (myInputObject.value > 999) {
         myInputObject.value = 999;
     };
-    if (myInputObject.value <= 0) {
-        myInputObject.value = 0;
+    if (myInputObject.value < 1) {
+        myInputObject.value = " ";
     };
 };
 /*alter appearance of markup of spinners*/
 let redesignSpinners = function () {
+
     let numberInput = document.getElementsByClassName("price");
+
     Array.prototype.forEach.call(numberInput, function (item, index) {
         item.setAttribute("id", item.getAttribute("name"));
+        item.setAttribute("placeholder","0");
         let numberSpinner = document.createElement("DIV");
         let spinnerSection = document.createElement("SECTION");
         numberSpinner.setAttribute("class", "numberSpinner");
@@ -65,12 +73,6 @@ let redesignSpinners = function () {
         spinnerSection.parentNode.insertBefore(spinnerPlus, spinnerSection.nextElementSibling);
         spinnerSection.parentNode.insertBefore(spinnerMinus, spinnerSection);
     });
-    // Array.prototype.forEach.call(numberInput, function(item,index) {
-    //     console.log(item.value)
-    //     if(item.value.length < 1){
-    //         item.value = 0;
-    //     };
-    // });
 };
 redesignSpinners();
 let numberSpinnerPlus = document.getElementsByClassName("numberPlus");
@@ -85,6 +87,36 @@ for (var i = 0; i < numberSpinnerMinus.length; i++) {
         numIncrement("" + this.nextElementSibling.firstChild.id + "", false)
     });
 };
+/* create image previews
+ */
+
+let imgArray = [];
+let imagePreviews = document.querySelectorAll(".img-container img");
+for (let i = 0; i < imagePreviews.length; i++) {
+    imgArray.push(imagePreviews[i].getAttribute("src"));
+};
+
+let createImagePreiviews = function(){
+    let _rows = document.querySelectorAll(".card-body table tr");
+    Array.prototype.forEach.call(_rows, function (item, index) {
+        let tableCell = document.createElement("td");
+        tableCell.setAttribute("class","lei-preview");    
+
+        let cellImg = document.createElement("A");
+        cellImg.setAttribute("href",imgArray[index-1]);
+        cellImg.style.background = "url(" + imgArray[index-1] + ")";
+        cellImg.setAttribute("target","_blank");
+        if(cellImg.getAttribute("href") !== "undefined"){
+            tableCell.appendChild(cellImg);
+        }
+
+        item.appendChild(tableCell);
+    });
+};
+createImagePreiviews();
+
+
+
 /* creates pop up window to hold addToCart */
 let createAddToCartWindow = function () {
     document.getElementsByClassName("col-md-12")[0].setAttribute("id", "addToCartWindow");

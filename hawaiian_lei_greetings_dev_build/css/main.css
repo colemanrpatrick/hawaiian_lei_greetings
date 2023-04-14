@@ -1302,6 +1302,9 @@ li {
 }
 
 /* ---cart -- */
+.cart-post {
+	padding-top: 4em;
+}
 #headingAllPackages {
 	/*! display: none; */
 }
@@ -1539,7 +1542,7 @@ td, th {
 
 @media(max-width:938px) {
 	.price-form {
-		padding: 4em 0em;
+		padding: 0em 0em;
 	}
 }
 
@@ -1573,4 +1576,49 @@ td, th {
 		width: 90%;
 		max-width: 20em;
 	}
+}
+
+.lei-preview a {
+  width: 10em;
+  height: 10em;
+  display: block;
+  background-size: cover !important;
+  margin: 0 auto;
+  background-position: center center !important;
+}
+td {
+  width: 25%;
+  text-align: center;
+}
+@media(max-width: 600px){
+	.numberSpinner button{
+		width: 2em;
+	}
+	.numberSpinner section{
+		width: 2.35em;
+		overflow: hidden;
+	}
+	.lei-preview a {
+		width: 5em;
+		height: 5em;
+	}
+	td {
+		width: auto; 
+  }
+	.card-body {
+		padding: 0em;
+	}
+	.price-form{
+		width: 100%;
+		min-height: 100%;
+	}
+}
+
+
+.cart-post p {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+#cart-update p {
+  font-size: 1em;
 }
