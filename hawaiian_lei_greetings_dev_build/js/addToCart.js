@@ -158,3 +158,5 @@ Array.prototype.forEach.call(emailInput, function (item, index) {
 let finalText = document.getElementsByClassName("price-form")[0].nextElementSibling;
 let cartPost = document.getElementsByClassName("cart-post")[0];
 cartPost.appendChild(finalText);
+
+document.getElementById("btn0").setAttribute("id","menu-btn");
