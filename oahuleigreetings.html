@@ -63,8 +63,8 @@
     </div>
     <div id="catalog-main">
       <button type="button" class="lei-button">Reserve Now!</button>
-      <a href="#" class="lei-button" id="learn-more">Learn More</a>
-      <script>$(document).ready(function () {$("#learn-more").click(function () {$("html, body").animate({scrollTop:$("#catalog-about").offset().top - $("#masthead").height(),},0000);});});</script>
+      <button type="button" class="lei-button" id="learn-more">Learn More</button>
+      <script>$(document).ready(function () {$("#learn-more").on("click" , function () {$("html, body").animate({scrollTop:$("#catalog-about").offset().top - $("#masthead").height(),},0000);});});</script>
       <h3>lei greeting catalog <span>* The type of flower used on any lei is subject to season and availability.</span></h3>
       <section>
         <div class="lei-product">
