@@ -843,7 +843,30 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" integrity="sha512-6Uv+497AWTmj/6V14BsQioPrm3kgwmK9HYIyWP+vClykX52b0zrDGP7lajZoIY1nNlX4oQuh7zsGjmF7D0VZYA==" crossorigin="anonymous"></script>
 <script>$(document).ready(function(){$('.price-form').on('input change', function () {$('#checkout').attr('disabled', true);$('#checkout-display-warning').attr('style', 'display:inline-block;');});$(".price-form").removeAttr("novalidate");$(".price-form").validate({ rules : {price_511_20230430_11:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_12:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_13:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_14:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_15:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_16:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_17:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_18:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_19:{require_from_group: [1, ".p511_20230430"],number:true,min:1},price_511_20230430_20:{require_from_group: [1, ".p511_20230430"],number:true,min:1},ActivityDate_511_20230430:{required: true, date: true},SelectYourOahuHotel_511_20230430:{required: true},CustomerFirstName: {required: true},CustomerLastName: {required: true},CustomerAddress: {required: true},CustomerCity: {required: true},CustomerRegion: {required: true},CustomerPostalCode: {required: true},CustomerCountry: {required: true},CustomerPrimaryEmail: {required: true},CustomerMobilePhone: {required: true}}, messages : {ActivityDate_511_20230430: {required:"Choose Activity Date",date:"Activity Date must be a valid date."},SelectYourOahuHotel_511_20230430: {required:"Select Select Your Oahu Hotel"},"CustomerFirstName": {required: "Please enter your First Name"},"CustomerLastName": {required: "Please enter your Last Name"},"CustomerAddress": {required: "Please enter your Address"},"CustomerCity": {required: "Please enter your City"},"CustomerRegion": {required: "Please enter your State or Region"},"CustomerPostalCode": {required: "Please enter your Postal Code"},"CustomerCountry": {required: "Please enter your Country"},"CustomerPrimaryEmail": {required: "Please enter your Email"},"CustomerMobilePhone": {required: "Please enter your Mobile phone number"}}});});</script>
+    <script>
 
+        let leiLocation = document.getElementsByClassName("mb-0")[0].firstElementChild.innerText;
+        const $cartHero = document.getElementById("cart-hero");
+        leiLocation = leiLocation.replace(/\s+/g, ' ');
+        let leiLocationHeader = document.createElement("h1");
+        leiLocationHeader.setAttribute("id","lei-location-header");
+        leiLocationHeader.innerHTML = leiLocation;
+        $cartHero.appendChild(leiLocationHeader);
+
+        let $cartLabels = document.getElementsByTagName("LABEL");
+
+        Array.prototype.forEach.call($cartLabels, function (item, index) {
+            $inputContainer = document.createElement("DIV");
+            $inputContainer.setAttribute("class","cart-control");
+
+            if(item.nextElementSibling.tagName == "INPUT"){
+                item.parentElement.insertBefore($inputContainer,item); 
+                $inputContainer.appendChild(item.nextElementSibling); 
+                // parentElement.insertBefore(newElement, referenceElement);
+                $inputContainer.insertBefore(item,$inputContainer.firstElementChild);
+            };
+        });
+    </script>
         <footer>
             <ul>
                 <li>
