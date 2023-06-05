@@ -203,6 +203,26 @@ p {
 	-webkit-transform: translate(-50%, -50%) rotate(45deg);
 	transform: translate(-50%, -50%) rotate(45deg);
 }
+#cart-btn{
+    display: inline-block;
+    background-color: #a92f64;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 2em;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 3em;
+}
+
+#cart-btn span.material-symbols-outlined{ 
+    padding: 0;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
 /*=====================*/
 #masthead {
 	position: fixed;
@@ -218,7 +238,7 @@ p {
 
 		#masthead ul li {
 			display: table-cell;
-			vertical-align: top;
+			vertical-align: middle;
 			position: relative;
 		}
 
@@ -274,10 +294,9 @@ p {
 	}
 
 #phone-mobile {
-	position: absolute;
-	right: 4em;
-	top: 1.5em;
-	margin-right: 2em;
+	display: inline-block;
+	margin-right: 1em;
+	vertical-align: middle;
 }
 
 	#phone-mobile .material-symbols-outlined {
@@ -286,7 +305,6 @@ p {
 	}
 
 .menu-btn, #phone-mobile {
-	display: block;
 }
 
 #masthead {
@@ -847,7 +865,7 @@ footer h4 {
 	}
 }
 
-@media(max-width:500px) {
+@media(max-width:800px) {
 	#phone-mobile p {
 		display: none;
 	}
@@ -1596,7 +1614,7 @@ td {
 		width: 2em;
 	}
 	.numberSpinner section{
-		width: 2.35em;
+		width: 3.5em;
 		overflow: hidden;
 	}
 	.lei-preview a {
@@ -1843,7 +1861,7 @@ td {
   left: 0;
 }
 
-#blog-hero {
+.blog-body-header {
   padding: 6em;
   margin-top: 6em;
   background-color: #a92f64;
@@ -1851,4 +1869,8 @@ td {
   background-image: url("../images/aboutleigreetings.jpg");
   background-size: cover;
   background-position: center;
+}
+.blog-body-header h1{
+  color: white;
+	text-shadow: 0em 0em 0.25em black !important;
 }
