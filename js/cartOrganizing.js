@@ -162,3 +162,34 @@ scrollButton.addEventListener("click",function(){
    scrollLocation.scrollIntoView({ behavior: "auto" });
 },false);
 
+/*=================================================================*/
+/*=============|   more moving around and styling   |=============*/
+/*===============================================================*/
+
+const mb0 = document.getElementsByClassName("mb-0");
+
+Array.prototype.forEach.call(mb0, function (item, index) {
+    let leiLocation = item.firstElementChild.innerText;
+    leiLocation = leiLocation.replace(/\s+/g, ' ');
+    let leiLocationHeader = document.createElement("h2");
+    leiLocationHeader.setAttribute("class","lei-location-header");
+    leiLocationHeader.innerHTML = leiLocation;
+    item.parentElement.insertBefore(leiLocationHeader, item);
+    item.style.display = "none";
+});
+
+//=====================================================================
+
+let $cartLabels = document.getElementsByTagName("LABEL");
+
+Array.prototype.forEach.call($cartLabels, function (item, index) {
+    $inputContainer = document.createElement("DIV");
+    $inputContainer.setAttribute("class","cart-control");
+
+    if(item.nextElementSibling.tagName == "INPUT" || item.nextElementSibling.tagName == "SELECT"){
+        item.parentElement.insertBefore($inputContainer,item); 
+        $inputContainer.appendChild(item.nextElementSibling); 
+        // parentElement.insertBefore(newElement, referenceElement);
+        $inputContainer.insertBefore(item,$inputContainer.firstElementChild);
+    };
+});
